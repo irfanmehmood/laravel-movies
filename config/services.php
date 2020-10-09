@@ -30,4 +30,13 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'tmdb' => [
+        'apikey' => env('TMDB_API_KEY'),
+        'genreEndpoint' => 'https://api.themoviedb.org/3/genre/movie/list',
+        'moviesEndpoint' => 'https://api.themoviedb.org/3/movie/',
+        'personEndpoint' => 'https://api.themoviedb.org/3/person/',
+        'searchEndpoint' => 'https://api.themoviedb.org/3/search/movie?query=',
+        
+    ],
+
 ];
