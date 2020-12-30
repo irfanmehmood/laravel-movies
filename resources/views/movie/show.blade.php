@@ -1,5 +1,7 @@
 @extends('layouts.main')
-
+@section('title', $movie['title'])
+@section('description', explode('.', $movie['overview'])[0])
+@section('image', 'https://image.tmdb.org/t/p/w500/' . $movie['poster_path'])
 @section('content')
     <div class="movie-info border-b border-gray-800">
         <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row">

@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Movie App</title>
-
+    <title>MovieFlix -  @yield('title', 'Movies Database')</title>
+    <meta property="og:title" content="@yield('title', 'Movies Database')" />
+    <meta property="og:description" content="@yield('description', 'Movies Database to find upcoming and latest movies trailers and information')" />
+    <meta property="og:type"  content="video.movies" />
+    <meta property="og:url"   content="{{url()->current()}}" />
+    <meta property="og:image" content="@yield('image', '')" />
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <livewire:styles>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
